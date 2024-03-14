@@ -1,0 +1,725 @@
+15:26:33.754 [restartedMain] INFO  com.galaxe.UserServiceApplication - Starting UserServiceApplication using Java 17.0.8 with PID 13020 (C:\Users\supatil\OneDrive - GalaxE. Solutions, Inc\Documents\JavaPractice\UserService\target\classes started by supatil in C:\Users\supatil\OneDrive - GalaxE. Solutions, Inc\Documents\JavaPractice\UserService)
+15:26:33.765 [restartedMain] DEBUG com.galaxe.UserServiceApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
+15:26:33.767 [restartedMain] INFO  com.galaxe.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+15:26:33.853 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:26:33.853 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:26:35.461 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:26:35.937 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 450 ms. Found 1 JPA repository interface.
+15:26:36.618 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=faff97d2-9af9-3b57-9638-ab5410e172c7
+15:26:37.244 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+15:26:37.248 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.252 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.272 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.278 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.280 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$688/0x000000080050fb58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.285 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.301 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.319 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.325 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.326 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.328 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.357 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.378 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.381 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.383 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.387 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:37.389 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+15:26:38.115 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7171 (http)
+15:26:38.129 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:26:38.130 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+15:26:38.252 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:26:38.253 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4399 ms
+15:26:38.610 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:26:38.769 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+15:26:38.848 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+15:26:39.402 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+15:26:39.470 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:26:40.177 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 11630147-e652-411d-98e6-367e2a9a4240
+15:26:40.183 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:26:44.332 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:26:45.745 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:26:47.966 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:26:50.001 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+15:26:50.517 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+15:26:50.965 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+15:26:51.125 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+15:26:51.257 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+15:26:51.273 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:26:51.340 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+15:26:51.341 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+15:26:51.341 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+15:26:51.341 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+15:26:51.341 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+15:26:51.341 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+15:26:51.341 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+15:26:52.556 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+15:26:52.560 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+15:26:52.566 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+15:26:52.577 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1710323812576 with initial instances count: 0
+15:26:52.602 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application USER-SERVICE with eureka with status UP
+15:26:52.603 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1710323812603, current=UP, previous=STARTING]
+15:26:52.611 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_USER-SERVICE/GXNB-PF4BA700.galaxy.lan:User-Service:7171: registering service...
+15:26:52.710 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7171 (http) with context path ''
+15:26:52.712 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 7171
+15:26:52.931 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_USER-SERVICE/GXNB-PF4BA700.galaxy.lan:User-Service:7171 - registration status: 204
+15:26:53.219 [restartedMain] INFO  com.galaxe.UserServiceApplication - Started UserServiceApplication in 20.46 seconds (process running for 22.035)
+15:27:22.561 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+15:27:22.565 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+15:27:22.565 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+15:27:22.565 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+15:27:22.565 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+15:27:22.565 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+15:27:22.565 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+15:27:22.610 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+15:28:18.630 [http-nio-7171-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:28:18.630 [http-nio-7171-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:28:18.632 [http-nio-7171-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+15:28:18.904 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+15:28:18.904 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+15:28:18.904 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is started with arguments [sam@gmail.com, Sam@123]
+15:28:19.299 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is ended
+15:28:19.299 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is ended
+15:28:19.299 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is ended
+15:28:20.959 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:28:20.960 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:28:20.965 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:28:21.017 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:28:21.017 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:28:21.017 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:28:21.035 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:28:21.038 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:28:21.038 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:28:21.038 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:28:21.038 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:28:21.038 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:28:33.245 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [91]
+15:28:33.245 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [91]
+15:28:33.263 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [91]
+15:28:33.290 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:28:33.290 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+15:28:33.290 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+15:29:20.939 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sumantpatil653@gmail.com, dob=null, password=Sam@123)]
+15:29:20.939 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sumantpatil653@gmail.com, dob=null, password=Sam@123)]
+15:29:20.939 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is started with arguments [sumantpatil653@gmail.com, Sam@123]
+15:29:20.950 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is ended
+15:29:20.950 [http-nio-7171-exec-7] ERROR com.galaxe.aspect.LoggingAspect - Some Exception is raised in User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto)with msg:: Invalid  Credentials!!!!!!!
+15:29:20.950 [http-nio-7171-exec-7] ERROR com.galaxe.aspect.LoggingAspect - Some Exception is raised in ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto)with msg:: Invalid  Credentials!!!!!!!
+15:29:20.950 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.advice.ExceptionHandlee.handleInvalidCredientialsException(InvalidCredientialsException) is started with arguments [com.galaxe.advice.InvalidCredientialsException: Invalid  Credentials!!!!!!!]
+15:29:20.967 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.advice.ExceptionHandlee.handleInvalidCredientialsException(InvalidCredientialsException) is ended
+15:29:20.971 [http-nio-7171-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.galaxe.advice.InvalidCredientialsException: Invalid  Credentials!!!!!!!]
+15:29:27.665 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sumantpatil653@gmail.com, dob=null, password=123456)]
+15:29:27.665 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sumantpatil653@gmail.com, dob=null, password=123456)]
+15:29:27.665 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is started with arguments [sumantpatil653@gmail.com, 123456]
+15:29:27.665 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is ended
+15:29:27.665 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is ended
+15:29:27.665 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is ended
+15:29:38.569 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.retrieveSubsription(UserDto) is started with arguments [UserDto(name=null, email=sumantpatil653@gmail.com, dob=null, password=123456)]
+15:29:38.569 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.retrieveSubscription(UserDto) is started with arguments [UserDto(name=null, email=sumantpatil653@gmail.com, dob=null, password=123456)]
+15:29:38.569 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is started with arguments [sumantpatil653@gmail.com, 123456]
+15:29:38.569 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is ended
+15:29:38.569 [http-nio-7171-exec-10] ERROR com.galaxe.aspect.LoggingAspect - Some Exception is raised in User com.galaxe.serviceImpl.UserServiceImpl.retrieveSubscription(UserDto)with msg:: Subscription is not retrived beacause you are already subscribed
+15:29:38.569 [http-nio-7171-exec-10] ERROR com.galaxe.aspect.LoggingAspect - Some Exception is raised in ResponseEntity com.galaxe.controller.UserController.retrieveSubsription(UserDto)with msg:: Subscription is not retrived beacause you are already subscribed
+15:29:38.569 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.advice.ExceptionHandlee.handleSubscriptionFailedException(SubscriptionFailedException) is started with arguments [com.galaxe.advice.SubscriptionFailedException: Subscription is not retrived beacause you are already subscribed]
+15:29:38.569 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.advice.ExceptionHandlee.handleSubscriptionFailedException(SubscriptionFailedException) is ended
+15:29:38.569 [http-nio-7171-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.galaxe.advice.SubscriptionFailedException: Subscription is not retrived beacause you are already subscribed]
+15:30:08.781 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+15:30:08.781 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+15:30:08.781 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is started with arguments [sam@gmail.com, Sam@123]
+15:30:08.794 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is ended
+15:30:08.794 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is ended
+15:30:08.794 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is ended
+15:30:10.386 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:30:10.386 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:30:10.386 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:30:10.396 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:30:10.396 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:30:10.396 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:30:10.399 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:30:10.399 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:30:10.399 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:30:10.411 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:30:10.411 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:30:10.411 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:31:51.355 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:34:27.780 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:34:27.781 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:34:27.781 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:34:27.800 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:34:27.800 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:34:27.800 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:34:27.800 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:34:27.800 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:34:27.800 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:34:27.814 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:34:27.814 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:34:27.814 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:34:29.786 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:34:29.787 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:34:29.787 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:34:29.796 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:34:29.796 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:34:29.796 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:34:29.808 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:34:29.808 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:34:29.808 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:34:29.814 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:34:29.814 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:34:29.814 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:36:07.659 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:36:07.660 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:36:07.660 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:36:07.669 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:36:07.669 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:36:07.669 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:36:40.048 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:36:40.048 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:36:40.049 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:36:40.056 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:36:40.056 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:36:40.056 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:36:40.056 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:36:40.056 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:36:40.056 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:36:40.071 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:36:40.071 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:36:40.071 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:36:41.067 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:36:41.068 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:36:41.068 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:36:41.068 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:36:41.068 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:36:41.068 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:36:41.083 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:36:41.083 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:36:41.083 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:36:41.089 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:36:41.089 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:36:41.089 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:36:51.368 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:36:57.776 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [93]
+15:36:57.776 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [93]
+15:36:57.776 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [93]
+15:36:57.797 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:36:57.798 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+15:36:57.798 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+15:37:22.303 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.updateUserDetails(User) is started with arguments [User(userId=93, name=Ramesh, email=ramesh223@gmail.com, dob=2011-08-11, password=123456, subscriptionStatus=null, type=null)]
+15:37:22.304 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.updateUserDetails(User) is started with arguments [User(userId=93, name=Ramesh, email=ramesh223@gmail.com, dob=2011-08-11, password=123456, subscriptionStatus=null, type=null)]
+15:37:22.304 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [93]
+15:37:22.325 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:37:22.338 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - Object org.springframework.data.repository.CrudRepository.save(Object) is started with arguments [User(userId=93, name=Ramesh, email=ramesh223@gmail.com, dob=2011-08-11, password=123456, subscriptionStatus=true, type=User)]
+15:37:22.370 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - Object org.springframework.data.repository.CrudRepository.save(Object) is ended
+15:37:22.370 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.updateUserDetails(User) is ended
+15:37:22.370 [http-nio-7171-exec-8] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.updateUserDetails(User) is ended
+15:39:14.672 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:39:14.673 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [93]
+15:39:14.673 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:39:14.673 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [93]
+15:39:14.673 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:39:14.673 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [93]
+15:39:14.692 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:39:14.692 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+15:39:14.692 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+15:39:14.692 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:39:14.692 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:39:14.692 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:39:41.042 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:39:41.042 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:39:41.042 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:39:41.053 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:39:41.053 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:39:41.053 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:39:41.057 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:39:41.057 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:39:41.057 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:39:41.057 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:39:41.057 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:39:41.057 [http-nio-7171-exec-3] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:39:43.146 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [93]
+15:39:43.146 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [93]
+15:39:43.146 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [93]
+15:39:43.156 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:39:43.156 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+15:39:43.156 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+15:40:13.904 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [91]
+15:40:13.904 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [91]
+15:40:13.904 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [91]
+15:40:13.910 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:40:13.910 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+15:40:13.910 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+15:40:20.870 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [93]
+15:40:20.870 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [93]
+15:40:20.870 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [93]
+15:40:20.870 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:40:20.886 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+15:40:20.886 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+15:41:51.377 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:42:52.900 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+15:42:52.900 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+15:42:52.900 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is started with arguments [sam@gmail.com, Sam@123]
+15:42:52.913 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is ended
+15:42:52.913 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is ended
+15:42:52.913 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is ended
+15:42:54.556 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:42:54.556 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:42:54.556 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:42:54.563 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:42:54.563 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:42:54.563 [http-nio-7171-exec-1] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:42:54.563 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:42:54.577 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:42:54.577 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:42:54.586 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:42:54.586 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:42:54.586 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:42:57.211 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [91]
+15:42:57.212 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [91]
+15:42:57.212 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [91]
+15:42:57.219 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:42:57.219 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+15:42:57.219 [http-nio-7171-exec-2] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+15:46:51.392 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:47:20.574 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+15:47:20.574 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+15:47:20.574 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is started with arguments [sam@gmail.com, Sam@123]
+15:47:20.580 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is ended
+15:47:20.580 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is ended
+15:47:20.580 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is ended
+15:47:22.492 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:47:22.492 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:47:22.492 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:47:22.497 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:47:22.497 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:47:22.497 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:47:22.500 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+15:47:22.501 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+15:47:22.501 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+15:47:22.506 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+15:47:22.506 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+15:47:22.506 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+15:47:25.052 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [91]
+15:47:25.052 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [91]
+15:47:25.052 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [91]
+15:47:25.052 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:47:25.052 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+15:47:25.052 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+15:51:51.406 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:54:47.944 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.updateUserDetails(User) is started with arguments [User(userId=91, name=Rahul, email=rahul253@gmail.com, dob=2011-08-27, password=123456, subscriptionStatus=null, type=null)]
+15:54:47.944 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.updateUserDetails(User) is started with arguments [User(userId=91, name=Rahul, email=rahul253@gmail.com, dob=2011-08-27, password=123456, subscriptionStatus=null, type=null)]
+15:54:47.944 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [91]
+15:54:47.958 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+15:54:47.958 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - Object org.springframework.data.repository.CrudRepository.save(Object) is started with arguments [User(userId=91, name=Rahul, email=rahul253@gmail.com, dob=2011-08-27, password=123456, subscriptionStatus=true, type=User)]
+15:54:48.024 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - Object org.springframework.data.repository.CrudRepository.save(Object) is ended
+15:54:48.024 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.updateUserDetails(User) is ended
+15:54:48.024 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.updateUserDetails(User) is ended
+15:56:51.414 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:00:16.827 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [93]
+16:00:16.828 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [93]
+16:00:16.828 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [93]
+16:00:16.841 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+16:00:16.842 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+16:00:16.842 [http-nio-7171-exec-10] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+16:01:51.416 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:06:51.418 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:11:51.421 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:15:41.971 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+16:15:41.972 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is started with arguments [UserDto(name=null, email=sam@gmail.com, dob=null, password=Sam@123)]
+16:15:41.972 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is started with arguments [sam@gmail.com, Sam@123]
+16:15:41.985 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.repository.UserRepository.findByEmailAndPassword(String,String) is ended
+16:15:41.985 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.loginUser(UserDto) is ended
+16:15:41.985 [http-nio-7171-exec-5] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.loginUser(UserDto) is ended
+16:15:43.607 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+16:15:43.607 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+16:15:43.607 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+16:15:43.620 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+16:15:43.620 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+16:15:43.620 [http-nio-7171-exec-4] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+16:15:43.625 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is started with arguments []
+16:15:43.625 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is started with arguments []
+16:15:43.625 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is started with arguments []
+16:15:43.640 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List org.springframework.data.repository.ListCrudRepository.findAll() is ended
+16:15:43.640 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - List com.galaxe.serviceImpl.UserServiceImpl.getAllUsers() is ended
+16:15:43.640 [http-nio-7171-exec-6] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getAllUsers() is ended
+16:15:47.038 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is started with arguments [91]
+16:15:47.038 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is started with arguments [91]
+16:15:47.038 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [91]
+16:15:47.046 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+16:15:47.046 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.getDetailsOfAUser(Integer) is ended
+16:15:47.046 [http-nio-7171-exec-7] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.getDetailsOfAUser(Integer) is ended
+16:16:04.792 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.updateUserDetails(User) is started with arguments [User(userId=91, name=Rahulll, email=rahul253@gmail.com, dob=2011-08-27, password=123456, subscriptionStatus=null, type=null)]
+16:16:04.792 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.updateUserDetails(User) is started with arguments [User(userId=91, name=Rahulll, email=rahul253@gmail.com, dob=2011-08-27, password=123456, subscriptionStatus=null, type=null)]
+16:16:04.792 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is started with arguments [91]
+16:16:04.801 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - Optional org.springframework.data.repository.CrudRepository.findById(Object) is ended
+16:16:04.801 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - Object org.springframework.data.repository.CrudRepository.save(Object) is started with arguments [User(userId=91, name=Rahulll, email=rahul253@gmail.com, dob=2011-08-27, password=123456, subscriptionStatus=true, type=User)]
+16:16:04.813 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - Object org.springframework.data.repository.CrudRepository.save(Object) is ended
+16:16:04.813 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - User com.galaxe.serviceImpl.UserServiceImpl.updateUserDetails(User) is ended
+16:16:04.813 [http-nio-7171-exec-9] DEBUG com.galaxe.aspect.LoggingAspect - ResponseEntity com.galaxe.controller.UserController.updateUserDetails(User) is ended
+16:16:51.423 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:21:51.424 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:26:51.426 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:31:51.428 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:36:51.441 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:41:51.452 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:44:24.929 [RMI TCP Connection(86)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:44:24.939 [RMI TCP Connection(86)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application USER-SERVICE with eureka with status DOWN
+16:44:24.939 [RMI TCP Connection(86)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1710328464939, current=DOWN, previous=UP]
+16:44:24.940 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_USER-SERVICE/GXNB-PF4BA700.galaxy.lan:User-Service:7171: registering service...
+16:44:25.015 [RMI TCP Connection(86)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:44:25.038 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/USER-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/USER-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:885)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:781)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:663)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:184)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:95)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:879)
+	... 21 more
+
+16:44:25.039 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/USER-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+16:44:25.045 [RMI TCP Connection(86)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:44:25.057 [RMI TCP Connection(86)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:44:25.060 [RMI TCP Connection(86)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+16:44:25.099 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/USER-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/USER-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:885)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:781)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:663)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:184)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:95)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:879)
+	... 22 more
+
+16:44:25.099 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/USER-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+16:44:25.099 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.netflix.discovery.DiscoveryClient - DiscoveryClient_USER-SERVICE/GXNB-PF4BA700.galaxy.lan:User-Service:7171 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+16:44:25.118 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+16:44:25.123 [RMI TCP Connection(86)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+16:44:25.180 [RMI TCP Connection(86)-127.0.0.1] INFO  c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/USER-SERVICE/GXNB-PF4BA700.galaxy.lan:User-Service:7171": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/USER-SERVICE/GXNB-PF4BA700.galaxy.lan:User-Service:7171": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:885)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:781)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:663)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1183)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1144)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1090)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor48.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:184)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:95)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:879)
+	... 75 more
+
+16:44:25.182 [RMI TCP Connection(86)-127.0.0.1] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/USER-SERVICE/GXNB-PF4BA700.galaxy.lan:User-Service:7171": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+16:44:25.182 [RMI TCP Connection(86)-127.0.0.1] ERROR c.netflix.discovery.DiscoveryClient - DiscoveryClient_USER-SERVICE/GXNB-PF4BA700.galaxy.lan:User-Service:7171 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1183)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1144)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1090)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor48.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+16:44:25.196 [RMI TCP Connection(86)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

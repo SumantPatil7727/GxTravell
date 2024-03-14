@@ -1,0 +1,9 @@
+logging:
+  level:
+    com.galaxe: debug
+
+  file.name : UserService.log
+    
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %highlight(%-5level){%magenta(%-5level)} %logger{36} - %msg%n"
+    file :  "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
